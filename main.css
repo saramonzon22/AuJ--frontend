@@ -1,125 +1,172 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 main {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #f3f4f6; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  padding: 10px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  width: 60%;
 }
 
 .li-card:nth-child(1) {
-    grid-column: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 .li-card:nth-child(2),
 .li-card:nth-child(3),
 .li-card:nth-child(4),
 .li-card:nth-child(5) {
-    grid-column: span 1;
+  grid-column: span 1;
 }
 
 .li-card {
-    width: 100%;
-    height: 250px;
-    list-style: none;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    cursor: pointer;
-    border-radius: 8px;
+  width: 100%;
+  height: 250px;
+  list-style: none;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.card__front{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card__front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  padding: 10px;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-
 
 .li-card .front,
 .li-card .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
 }
 
 .li-card .back {
-    font-size: 1.25rem;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    background-color: #B1CFC8;
-    transform: rotateY(180deg);
+  font-size: 1.25rem;
+  text-align: center;
+  display: flex;
+  place-items: center;
+  background-color: #b1cfc8;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
 .card__description {
-    color: white;
+  color: white;
+  padding: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .li-card:hover {
-    transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .li-card-1 {
-    background: linear-gradient(to bottom, #dd917e, #e76e50);
+  background: linear-gradient(to bottom, #dd917e, #e76e50);
 }
 
 .li-card-1 .back {
-    background: #d86144;
+  background: #d86144;
 }
 
 .li-card-2 {
-    background: linear-gradient(to bottom, #eebb91, #f4a462);
+  background: linear-gradient(to bottom, #eebb91, #f4a462);
 }
 
 .li-card-2 .back {
-    background: #d48e54;
+  background: #d48e54;
 }
 
 .li-card-3 {
-    background: linear-gradient(to bottom, #152a31, #274754);
+  background: linear-gradient(to bottom, #152a31, #274754);
 }
 
 .li-card-3 .back {
-    background: #152a31;
+  background: #152a31;
 }
 
 .li-card-4 {
-    background: linear-gradient(to bottom, #214944, #2a9d90);
+  background: linear-gradient(to bottom, #214944, #2a9d90);
 }
 
 .li-card-4 .back {
-    background: #214944;
+  background: #214944;
 }
 
 .li-card-5 {
-    background: linear-gradient(to bottom, #c79e35, #e9c979);
+  background: linear-gradient(to bottom, #c79e35, #e9c979);
 }
 
 .li-card-5 .back {
-    background: #caad63;
+  background: #caad63;
+}
+
+@media screen and (max-width: 1024px) {
+  .card__description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .li-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
+
+  .card__description {
+    font-size: 14px;
+  }
 }
