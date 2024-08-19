@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    padding: 32px 16px;
+}
+
+.main__card {
+    width: 400px;
+    height: 600px;
+    background-color: #213D48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+.container__img {
+    border-radius: 50%;
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile__pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.description {
+    background-color: #DCB960;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.rrss__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.rrss__list_item {
+    display: flex;
+    gap: 15px;
+}
+
+.rrss_link {
+    padding: 10px;
+    border-radius: 8px;
+    color: #FFFF;
+    width: 280px;
+    text-align: center;
+}
+
+.rrss_link:visited {
+    color: #FFFF;
+}
+
+.rrss__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.link__1 {
+    background-color: #CEC9C5;
+    color: #000;
+}
+
+.link__1:visited {
+    color: #000;
+}
+
+.link__2 {
+    background-color: #213D48;
+}
+
+.link__3 {
+    background-color: #267C72;
+}
+
+.footer {
+    background-color: #E8E7E7;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_description {
+    margin-left: 50px;
+}
+
+.footer_list {
+    display: flex;
+    gap: 15px;
+    margin-right: 80px;
+    list-style: none;
+}
+
+.rrss__icon_footer {
+    width: 30px;
+    height: 30px;
+}
