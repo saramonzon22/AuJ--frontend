@@ -2,25 +2,45 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contact__header {
+  width: 100%;
+  background-color: #e8e7e7;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.page__title {
+  font-weight: 500;
+  padding-left: 50px;
+}
+.navigation__list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
 }
 
 main {
   width: 100%;
-  min-height: 100vh;
+  height: 80vh;
   background-color: #f3f4f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.page__title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 500;
-  padding: 10px;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,7 +64,7 @@ main {
 
 .li-card {
   width: 100%;
-  height: 250px;
+  height: 200px;
   list-style: none;
   position: relative;
   transform-style: preserve-3d;
@@ -143,6 +163,27 @@ main {
 
 .li-card-5 .back {
   background: #caad63;
+}
+
+.footer {
+  background-color: #e8e7e7;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_description {
+  margin-left: 50px;
+}
+.footer_list {
+  display: flex;
+  gap: 15px;
+  margin-right: 80px;
+  list-style: none;
+}
+.rrss__icon_footer {
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 1024px) {
