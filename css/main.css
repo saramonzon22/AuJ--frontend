@@ -18,6 +18,10 @@
   font-weight: 500;
   padding-left: 50px;
 }
+.page__title-info {
+  font-weight: 500;
+  margin: 20px;
+}
 .navigation__list {
   display: flex;
   gap: 25px;
