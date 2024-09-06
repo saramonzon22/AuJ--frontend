@@ -5,21 +5,40 @@
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+.contact__header{
+    width: 100%;
+    background-color: #E8E7E7;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.page__title{   
+    font-weight: 500;
+    padding-left: 50px;
+
+}
+.navigation__list{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding-right: 50px;
+}
+
 a {
     text-decoration: none;
 }
-
 a:visited {
     color: #000;
-}
+  }
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    height: 80vh;
     align-items: center;
-    justify-content: space-around;
-    gap: 32px;
-    padding: 32px 16px;
+    justify-content: center;
+    gap: 250px;
 }
 
 .main__card {
